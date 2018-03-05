@@ -1,0 +1,21 @@
+{
+  "name": "nightwatch_demo_meli",
+  "version": "1.0.0",
+  "description": "Una demo sobre nightwatch y cucumber ",
+
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "devDependencies":{
+    "cucumber": "4.0.0",
+    "nightwatch": "0.9.20",
+    "nightwatch-cucumber": "9.1.1",
+    "chromedriver": "^2.35.0",
+    "selenium-server": "3.8.1",
+    "selenium-standalone": "6.12.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "cucumber-html-reporter": "3.0.4"
+  },
+  "author": "Axel Barfod",
+  "license": "ISC"
+}

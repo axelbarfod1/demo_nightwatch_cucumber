@@ -1,0 +1,7 @@
+.idea/
+.DS_Store
+selenium-debug.log
+*/*.log
+node_modules/
+*.iml
+reports/
