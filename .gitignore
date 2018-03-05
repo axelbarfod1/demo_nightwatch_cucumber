@@ -5,3 +5,4 @@ selenium-debug.log
 node_modules/
 *.iml
 reports/
+npm-debug.*
