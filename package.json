@@ -4,7 +4,8 @@
   "description": "Una demo sobre nightwatch y cucumber ",
 
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "e2e-report": "node ./features/support/createHtmlReport.js"
   },
   "devDependencies":{
     "cucumber": "4.0.0",
@@ -14,7 +15,8 @@
     "selenium-server": "3.8.1",
     "selenium-standalone": "6.12.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "cucumber-html-reporter": "3.0.4"
+    "cucumber-html-reporter": "3.0.4",
+    "geckodriver": "1.10.0"
   },
   "author": "Axel Barfod",
   "license": "ISC"

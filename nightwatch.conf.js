@@ -21,7 +21,7 @@ module.exports = {
   },
   test_settings: {
     default: {
-      launch_url: 'http://localhost:8087',
+      launch_url: 'http://www.mercadolibre.com.uy',
       selenium_port: 4444,
       selenium_host: '127.0.0.1',
       desiredCapabilities: {
