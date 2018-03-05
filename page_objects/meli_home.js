@@ -5,14 +5,25 @@ var meliHomePageCommands = {
         },
 
         isBodyLoaded : function(){
-            return this .waitForElementPresent('@body', timeout)
+            return this .waitForElementPresent('@loginButton', timeout)
+        },
+
+        search: function(pSearch){
+            return this .waitForElementPresent('@searchBar',timeout)
+                .setValue('@searchBar', pSearch)
+                .waitForElementPresent('@searchButton', timeout)
+                .click('@searchButton')
         }
+
+        
+
+    
 }
 
-var timeout = 5000;
+var timeout = 25000;
 module.exports = {
     commands: [meliHomePageCommands],
-
+    url: 'http://www.mercadolibre.com.uy',
     elements: {
 
         loginButton: {
@@ -23,6 +34,9 @@ module.exports = {
         },
         searchBar: {
             selector: '.nav-search > input'
+        },
+        searchButton: {
+            selector: 'boton'
         }
     }
   }

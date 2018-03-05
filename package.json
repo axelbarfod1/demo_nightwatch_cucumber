@@ -4,7 +4,7 @@
   "description": "Una demo sobre nightwatch y cucumber ",
 
   "scripts": {
-    "test": "nightwatch",
+    "test": "nightwatch --tag test",
     "e2e-report": "node ./features/support/createHtmlReport.js"
   },
   "devDependencies":{

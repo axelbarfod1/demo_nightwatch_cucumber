@@ -23,23 +23,24 @@ module.exports = {
     default: {
       launch_url: 'http://www.mercadolibre.com.uy',
       selenium_port: 4444,
-      selenium_host: '127.0.0.1',
-      desiredCapabilities: {
-        browserName: 'phantomjs',
-        javascriptEnabled: true,
-        acceptSslCerts: true,
-        'phantomjs.binary.path': phantomjs.path
-      }
+      selenium_host: 'localhost',
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        on_error: true,
+        path: "./reports"
     },
-    chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,
-        acceptSslCerts: true
-      },
-      selenium: {
-        cli_args: {
-          'webdriver.chrome.driver': chromedriver.path
+        acceptSslCerts: true,
+        chromeOptions: {
+          args: ['--incognito', 'disable-extensions', '--no-sandbox']
+        },
+        selenium: {
+          cli_args: {
+            'webdriver.chrome.driver': chromedriver.path
+          }
         }
       }
     },
@@ -51,4 +52,4 @@ module.exports = {
       }
     }
   }
-}
+};
