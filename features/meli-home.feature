@@ -1,6 +1,5 @@
 Feature: Mercado Libre Home Page
 
-@test
 Scenario: Check Login button is Shown
 
   Given I open Mercado libre's home page
