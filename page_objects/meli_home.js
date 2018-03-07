@@ -13,6 +13,9 @@ var meliHomePageCommands = {
                 .setValue('@searchBar', pSearch)
                 .waitForElementPresent('@searchButton', timeout)
                 .click('@searchButton')
+        },
+        url: function(){
+            return this.api.launchUrl;
         }
 
         
@@ -20,10 +23,10 @@ var meliHomePageCommands = {
     
 }
 
-var timeout = 25000;
+var timeout = 5000;
 module.exports = {
     commands: [meliHomePageCommands],
-    url: 'http://www.mercadolibre.com.uy',
+    //url: 'http://www.mercadolibre.com.uy',
     elements: {
 
         loginButton: {

@@ -12,6 +12,10 @@ module.exports = {
   page_objects_path: 'page_objects',
   live_output: false,
   disable_colors: false,
+  test_workers: {
+    enabled: false,
+    workers: 2
+  },
   selenium: {
     start_process: true,
     server_path: seleniumServer.path,
