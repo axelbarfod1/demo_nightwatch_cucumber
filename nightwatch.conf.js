@@ -39,7 +39,7 @@ module.exports = {
         javascriptEnabled: true,
         acceptSslCerts: true,
         chromeOptions: {
-          args: ['--incognito', 'disable-extensions', '--no-sandbox']
+          args: ['--headless']
         },
         selenium: {
           cli_args: {

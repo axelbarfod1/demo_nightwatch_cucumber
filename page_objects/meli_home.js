@@ -26,7 +26,6 @@ var meliHomePageCommands = {
 var timeout = 5000;
 module.exports = {
     commands: [meliHomePageCommands],
-    //url: 'http://www.mercadolibre.com.uy',
     elements: {
 
         loginButton: {
