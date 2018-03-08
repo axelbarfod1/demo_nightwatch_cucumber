@@ -5,6 +5,7 @@
 
   "scripts": {
     "e2e-test": "nightwatch --tag test",
+    "e2e-test:chrome": "nightwatch --tag test --config nightwatch.conf.BASIC.js",
     "e2e-report": "node ./features/support/createHtmlReport.js"
   },
   "devDependencies":{
