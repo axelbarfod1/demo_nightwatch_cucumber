@@ -1,24 +1,25 @@
 {
-  "name": "nightwatch_demo_meli",
-  "version": "1.0.0",
-  "description": "Una demo sobre nightwatch y cucumber ",
-
-  "scripts": {
-    "e2e-test": "nightwatch --tag test",
-    "e2e-test:chrome": "nightwatch --tag test --config nightwatch.conf.BASIC.js",
-    "e2e-report": "node ./features/support/createHtmlReport.js"
-  },
-  "devDependencies":{
-    "cucumber": "4.0.0",
-    "nightwatch": "0.9.20",
-    "nightwatch-cucumber": "9.1.1",
-    "chromedriver": "^2.35.0",
-    "selenium-server": "3.8.1",
-    "selenium-standalone": "6.12.0",
-    "phantomjs-prebuilt": "^2.1.16",
-    "cucumber-html-reporter": "3.0.4",
-    "geckodriver": "1.10.0"
-  },
-  "author": "Axel Barfod",
-  "license": "ISC"
-}
+    "name": "nightwatch_demo_meli",
+    "version": "1.0.0",
+    "description": "Una demo sobre nightwatch y cucumber ",
+  
+    "scripts": {
+      "e2e-test": "nightwatch --tag test",
+      "e2e-test:chrome": "nightwatch --tag test --config nightwatch.conf.BASIC.js",
+      "e2e-sauce": "nightwatch --tag test --config nightwatch.conf.saucelabs.js",
+      "e2e-report": "node ./features/support/createHtmlReport.js"
+    },
+    "devDependencies":{
+      "cucumber": "4.0.0",
+      "nightwatch": "0.9.20",
+      "nightwatch-cucumber": "9.1.1",
+      "chromedriver": "^2.35.0",
+      "selenium-server": "3.8.1",
+      "selenium-standalone": "6.12.0",
+      "phantomjs-prebuilt": "^2.1.16",
+      "cucumber-html-reporter": "3.0.4",
+      "geckodriver": "1.10.0"
+    },
+    "author": "Axel Barfod",
+    "license": "ISC"
+  }
